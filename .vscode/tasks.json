@@ -11,7 +11,7 @@
 				"-g",
 				"${file}",
 				"-o",
-				"${fileDirname}/${fileBasenameNoExtension}"
+				"${workspaceFolder}/output/${fileBasenameNoExtension}"
 			],
 			"options": {
 				"cwd": "${fileDirname}"

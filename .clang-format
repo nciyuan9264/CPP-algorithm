@@ -1,0 +1,10 @@
+---
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+Language: Cpp
+BasedOnStyle: LLVM
+UseTab: Never # 使用空格而不是制表符。
+IndentWidth: 2 # 缩进宽度为2个空格。
+TabWidth: 2 # Tab长度
+ColumnLimit: 140 # 单行的长度不超过140字符
+BreakBeforeBraces: Attach   # 使用自定义风格的大括号排列
+SortIncludes: false # 不用更改头文件排列顺序
