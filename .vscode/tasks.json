@@ -22,7 +22,13 @@
         "isDefault": true
       },
       "detail": "调试器生成的任务。"
-    }
+    },
+		{
+			"label": "cleanDSYM",
+			"type": "shell",
+			"command": "cmd",
+			"args": ["/C", "del", "/q", "/s", "${workspaceFolder}\\output\\*"]
+	}
   ],
   "version": "2.0.0"
 }
