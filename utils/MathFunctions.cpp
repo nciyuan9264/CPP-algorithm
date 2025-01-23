@@ -1,4 +1,6 @@
 #include <iostream>
+#include "MathFunctions.hpp"
+
 /**
  * power - Calculate the power of number.
  * @param base:	Base value.
