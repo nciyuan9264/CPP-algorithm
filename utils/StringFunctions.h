@@ -1,5 +1,5 @@
-#ifndef STRINGFUNCTIONS_HPP
-#define STRINGFUNCTIONS_HPP
+#ifndef STRINGFUNCTIONS_H
+#define STRINGFUNCTIONS_H
 
 #include <string>
 

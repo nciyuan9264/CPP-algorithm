@@ -1,6 +1,6 @@
 #include <iostream>
-#include "utils/MathFunctions.hpp"
-#include "utils/StringFunctions.hpp"  // Include the new string functions
+#include "utils/MathFunctions.h"
+#include "utils/StringFunctions.h"  // Include the new string functions
 
 int main()
 {

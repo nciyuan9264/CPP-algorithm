@@ -1,6 +1,7 @@
-#include "StringFunctions.hpp"
+// #include "StringFunctions.h"
 #include <algorithm>  // For std::transform
 #include <cctype>     // For std::toupper
+#include <string>
 
 // 将字符串转为大写
 std::string toUpperCase(const std::string& str)
