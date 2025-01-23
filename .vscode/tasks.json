@@ -4,7 +4,7 @@
 		{
 			"type": "cppbuild",
 			"label": "C/C++: clang++ 生成活动文件",
-			"command": "/usr/bin/clang++",
+			"command": "clang++",
 			"args": [
 				"-fcolor-diagnostics",
 				"-fansi-escape-codes",
@@ -19,18 +19,22 @@
 			"problemMatcher": [
 				"$gcc"
 			],
-			"group": "build",
-			"detail": "编译器: /usr/bin/clang++"
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++"
 		},
 		{
 			"label": "cleanDSYM",
 			"type": "shell",
 			"command": "rm",
-			"args": ["-rf", "${workspaceFolder}/output/*"],
-			"group": {
-					"kind": "build",
-					"isDefault": true
-			}
-	}
+			"args": [
+				"-rf",
+				"${workspaceFolder}/output/*"
+			],
+			"group": "build",
+			"problemMatcher": []
+		}
 	]
 }
