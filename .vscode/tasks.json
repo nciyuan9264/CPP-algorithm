@@ -2,18 +2,35 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build",
+      "label": "Configure",
       "type": "shell",
       "command": "cmake",
       "args": [
-        "--build",
-        "${workspaceFolder}/build"
+        "-DCMAKE_BUILD_TYPE=Debug",
+        ".."
       ],
+      "options": {
+        "cwd": "${workspaceFolder}/build" // 在 build 文件夹下执行命令
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build",
+      "type": "shell",
+      "command": "make",
+      "options": {
+        "cwd": "${workspaceFolder}/build" // 在 build 文件夹下执行命令
+      },
       "group": {
         "kind": "build",
         "isDefault": true
       },
-      "problemMatcher": ["$gcc"]
+      "problemMatcher": ["$gcc"],
+      "dependsOn": "Configure" // 配置任务先于构建任务执行
     }
   ]
 }
