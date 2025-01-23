@@ -1,5 +1,5 @@
-#ifndef POWER_H
-#define POWER_H
+#ifndef POWER_HPP
+#define POWER_HPP
 
 extern double power(double base, int exponent);
 
